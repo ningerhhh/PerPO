@@ -1,0 +1,42 @@
+# sh ./run/llava1.5_7b_lora_perpo.sh
+
+deepspeed perpo/models/llava-v1_5/train_perpo_lora.py \
+    --lora_enable True --lora_r 128 --lora_alpha 256 --mm_projector_lr 5e-6 \
+    --deepspeed ./perpo/models/llava-v1_5/scripts/zero3.json \
+    --model_name_or_path /models/llava-v1.5-7b \
+    --version v1 \
+    --ours_data_path ./data/llava1.5_7b_refcoco_data.json \
+    --vision_tower /models/clip-vit-large-patch14-336 \
+    --tune_mm_mlp_adapter False \
+    --freeze_backbone False \
+    --mm_projector_type mlp2x_gelu \
+    --mm_vision_select_layer -2 \
+    --mm_use_im_start_end False \
+    --mm_use_im_patch_token False \
+    --image_aspect_ratio pad \
+    --group_by_modality_length True \
+    --bf16 True \
+    --output_dir ./checkpoints/llava1.5_7b_lora_perpo \
+    --num_train_epochs 1 \
+    --per_device_train_batch_size 2 \
+    --per_device_eval_batch_size 4 \
+    --gradient_accumulation_steps 1 \
+    --evaluation_strategy "no" \
+    --save_strategy "steps" \
+    --save_steps 50000 \
+    --save_total_limit 1 \
+    --learning_rate 5e-6 \
+    --weight_decay 0. \
+    --warmup_steps 0 \
+    --lr_scheduler_type "cosine" \
+    --logging_steps 1 \
+    --tf32 True \
+    --model_max_length 2048 \
+    --gradient_checkpointing True \
+    --dataloader_num_workers 4 \
+    --lazy_preprocess True \
+    --report_to wandb \
+    --run_name "llava1.5_7b_lora_perpo" \
+    --beta 0.1 \
+    --perpo_gamma 0.5 \
+    --best_of_n 20
