@@ -1,7 +1,5 @@
 <h3><a href="">PerPO: Perceptual Preference Optimization via Discriminative Rewarding</a></h3>
 <a href=""><img src="https://img.shields.io/badge/Paper-PDF-Green"></a>
-<!--<a href=""><img src="https://img.shields.io/badge/Project-Page-orange"></a> -->
-<a href=""><img src="https://img.shields.io/badge/zhihu-orange"></a> 
 
 Zining Zhu*, [Liang Zhao*](), Kangheng Lin*, Jinze Yang, [En Yu](https://ahnsun.github.io/), Chenglong Liu, [Haoran Wei](https://scholar.google.com/citations?user=J4naK0MAAAAJ&hl=en), [Jianjian Sun](https://scholar.google.com/citations?user=MVZrGkYAAAAJ&hl=en), [Zheng Ge](https://joker316701882.github.io/), [Xiangyu Zhang](https://scholar.google.com/citations?user=yuB-cfoAAAAJ&hl=en)
 
@@ -114,6 +112,10 @@ deepspeed perpo/models/llava-v1_5/train_perpo_lora.py \
 | + SFT             | 84.6        | 90.3          | 77.1          | 77.5         | 86.5           | 67.4           | 81.3       | 80.2           | 75.0                | 2.57                 | 0.48 | **87.6** |
 | + DPO             | 85.5      | 90.8            | 78.8          | **78.1**     | 86.9         | 68.0             | 81.0         | 81.1         | 77.6              | 2.69                 | 0.49 | 87.5 |
 | + PerPO           | **86.7**    | **91.3**      | **81.0**      | 69.4         | **87.3**       | **70.1**       | **82.4**     | **82.4**      | **81.2**            | **2.81**             | **0.46** | **87.6** |
+| LLaVA-OneVision | 73.6     | 82.6      | 63.8   | 69.4     | 79.5 | 58.2 | 71.1 | 70.8 | 79.7 | 2.70            | 0.41        | 88.3 |
+| + SFT           | 74.7     | 83.7      | 65.4   | 70.3     | 80.8 | 59.1 | 72.1 | 71.7 | 77.9 | 2.73            | 0.40        | 88.1 |
+| + DPO           | 79.5 | 86.5  | 71.1| 74.6 | 83.4 | 64.5 | 76.3 | 76.1 | 80.1 | 2.75        | 0.39    | 88.4 |
+| + PerPO         | **82.2** | **88.1**  | **75.6**| **77.3** | **85.3** | **68.4** | **79.6** | **79.9** | **83.3** | **2.82**        | **0.37**    | **88.8** |
 
 
 </details>
@@ -146,7 +148,7 @@ deepspeed perpo/models/llava-v1_5/train_perpo_lora.py \
 </details>
 
 ## Contact
-If you have any questions related to the code or the paper, feel free to email (`zhuzining20@mails.ucas.ac.cn`).
+If you have any questions related to the code or the paper, feel free to email (`zhuzining20@mails.ucas.ac.cn`，`zhaoliang02@stepfun.com`).
 
 ## Acknowledgement
 
