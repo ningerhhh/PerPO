@@ -1,5 +1,6 @@
 <h3><a href="">PerPO: Perceptual Preference Optimization via Discriminative Rewarding</a></h3>
 <a href=""><img src="https://img.shields.io/badge/Paper-PDF-Green"></a>
+<a href=""><img src="https://img.shields.io/badge/zhihu-orange"></a> 
 
 Zining Zhu*, [Liang Zhao*](), Kangheng Lin*, Jinze Yang, [En Yu](https://ahnsun.github.io/), Chenglong Liu, [Haoran Wei](https://scholar.google.com/citations?user=J4naK0MAAAAJ&hl=en), [Jianjian Sun](https://scholar.google.com/citations?user=MVZrGkYAAAAJ&hl=en), [Zheng Ge](https://joker316701882.github.io/), [Xiangyu Zhang](https://scholar.google.com/citations?user=yuB-cfoAAAAJ&hl=en)
 
