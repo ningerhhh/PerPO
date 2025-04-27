@@ -162,5 +162,11 @@ If you have any questions related to the code or the paper, feel free to email (
 ## Citation
 If you find our work useful in your research, please consider citing PerPO:
 ```bibtex
+@article{zhu2025perpo,
+  title={PerPO: Perceptual Preference Optimization via Discriminative Rewarding},
+  author={Zhu, Zining and Zhao, Liang and Lin, Kangheng and Yang, Jinze and Yu, En and Liu, Chenglong and Wei, Haoran and Sun, Jianjian and Ge, Zheng and Zhang, Xiangyu},
+  journal={arXiv preprint arXiv:2502.04371},
+  year={2025}
+}
 
 ```
